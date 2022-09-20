@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+
+    height: 50px;
+    background-color: lightblue;
+    border-bottom: 2px #222 solid;
+    color: #333;
+}
+
+.navbar ul {
+    overflow: hidden;
+}
+
+.navbar li {
+    list-style: none;
+    float: left;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+    padding: 14px;
+    display: block;
+}
+
+.navbar a:hover:not(:nth-child(1)) {
+    background-color: #333;
+    color: white;
+}
+
+.navbar input {
+    float: right;
+    margin-right: 20px;
+    background-color: lightblue;
+    border: #999 1px solid;
+    display: block;
+    margin-top: 13px;
+    width: 280px;
+    border-radius: 10px;
+    height: 30px;
+    text-align: center;
+}
+
+main {
+    background-color: white;
+}
+
+/* main container */
+
+.container {
+    margin: auto;
+    margin-top: 20px;
+    width: 40%;
+    height: 80%;
+    display: block;
+    background-color: #f1f1f1;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.container li {
+    list-style: none;
+}
+
+.container a {
+    color: #222;
+}
+
+.container h4 {
+    float: left;
+}
+
+.container h6 {
+    color: #555;
+}
+
+.profile {
+    margin: 5px;
+    border-radius: 15px;
+    height: 30px;
+    float: left;
+}
+
+
+.option {
+    float: right;
+    
+}
+
+.post {
+    width: 100%;
+}
+
+.container button {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 15px;
+    display: inline;
+    cursor: pointer;
+    border: 0;
+}
+
+.container button:hover {
+    background-color: #999;
+}
+
+/* mobile device */
+
+@media only screen and (max-width: 725px) {
+    .navbar input {
+        width: 117px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .navbar li:not(:nth-child(1)) {
+        display: none;
+    }
+
+    .navbar {
+        background-color: white;
+        border: none;
+    }
+
+    .navbar input {
+        width: 80%;
+        text-align: center;
+        display: block;
+    }
+
+    .navbar li :nth-child(1) {
+        padding: 5px;
+        margin: 5px;
+        border-radius: 20px;
+        position: relative;
+        top: 6px;
+    }
+
+    .navbar li:hover :nth-child(1) {
+        border: 1px #222 solid;
+    }
+
+    /* main content */
+
+    .container {
+        height: 80%;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        height: 80%;
+        width: 90%;
+    }
+
+    .navbar input {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 310px) {
+    .navbar input {
+        width: 80%;
+        text-align: center;
+        display: block;
+    }
+
+    .container {
+        height: 80%;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 277px) {
+    .navbar input {
+        width: 75%;
+        text-align: center;
+        display: block;
+    }
+
+    .container button {
+        margin-left: 4px;
+    }
+}
+
+@media only screen and (max-width: 243px) {
+    .navbar input {
+        width: 70%;
+        text-align: center;
+        display: block;
+    }
+}
+
+.navbarResponsive {
+    height: 280px;
+    width: 90%;
+    background-color: lightblue;
+    margin: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.navbarResponsive li {
+    list-style: none;
+    display: block;
+}
+
+.navbarResponsive a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+    padding: 14px;
+    display: block;
+}
+
+.navbarResponsive input {
+    display: none;
+}
+
+/* desktop size */
+
+@media only screen and (min-width: 640px) {
+    .navbar li:nth-child(1) {
+        display: none;
+    }
+}
+
