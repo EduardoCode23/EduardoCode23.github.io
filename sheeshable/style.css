@@ -92,9 +92,9 @@ main {
 }
 
 
-.option {
+button.option {
     float: right;
-    
+    font-weight: bold;
 }
 
 .post {
@@ -102,6 +102,7 @@ main {
 }
 
 .container button {
+    background-color: #f1f1f1;
     margin: 5px;
     padding: 5px;
     border-radius: 5px;
