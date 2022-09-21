@@ -8,5 +8,6 @@ function dropdownMenu() {
 }
 
 function btnclick() {
-    windows.alert("Di pa nagana yan parr")
+    let click = "Di pa nagana yan parr";
+    windows.alert(click);
 };
