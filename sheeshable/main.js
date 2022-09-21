@@ -9,5 +9,5 @@ function dropdownMenu() {
 
 function btnclick() {
     let click = "Di pa nagana yan parr";
-    windows.alert(click);
+    alert(click);
 };
