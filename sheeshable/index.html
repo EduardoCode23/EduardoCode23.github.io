@@ -14,7 +14,7 @@
                 <li><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
                 <li><a href="">Newsfeed</a></li>
                 <li><a href="">Marketplace</a></li>
-                <li><a href="">Friends</a></li>
+                <li><a href="" onclick="friend()">Friends</a></li>
                 <li><a href="">Notification</a></li>
                 <li><a href="">Profile</a></li>
                 <input type="text" class="search" id="search" placeholder="Search">
@@ -22,78 +22,106 @@
         </nav>
     </header>
     <main>
-        <div class="container">
-            <li><a href=""><img src="./img/IMG_20210905_142014-01_1.jpeg" alt="Profile" class="profile"></a></li>
-            <li><a href=""><h4>Eduardo D. Fran</h4></a></li>
-            <button class="option">...</button>
-            <br>
-            <h6>Just now : Public</h6>
-            <hr>
-            <br>
-            <img src="./img/burgir2.png" alt="Post" class="post">
-            <br>
-            <hr>
-            <button onclick="btnclick()">Like</button>
-            <button onclick="btnclick()">Comment</button>
-            <button onclick="btnclick()">Share</button>
-            <hr>
-        </div>
+        <section class="section-left" id="section-left">
+            <div class="container" id="container">
+                <li><a href=""><img src="./img/IMG_20210905_142014-01_1.jpeg" alt="Profile" class="profile"></a></li>
+                <li><a href=""><h4>Eduardo D. Fran</h4></a></li>
+                <button class="option">...</button>
+                <br>
+                <h6>Just now : Public</h6>
+                <hr>
+                <br>
+                <img src="./img/burgir2.png" alt="Post" class="post">
+                <br>
+                <hr>
+                <button onclick="btnclick()">Like</button>
+                <button onclick="btnclick()">Comment</button>
+                <button onclick="btnclick()">Share</button>
+                <hr>
+            </div>
+    
+            <div class="container" id="container">
+                <li><a href=""><img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw3NjA4Mjc3NHx8ZW58MHx8fHw%3D&w=1000&q=80" alt="Profile" class="profile"></a></li>
+                <li><a href=""><h4>Pers Dimaunahan</h4></a></li>
+                <button class="option">...</button>
+                <br>
+                <h6>2h ago : Public</h6>
+                <hr>
+                <br>
+                <img src="https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Post" class="post">
+                <br>
+                <hr>
+                <button onclick="btnclick()">Like</button>
+                <button onclick="btnclick()">Comment</button>
+                <button onclick="btnclick()">Share</button>
+                <hr>
+            </div>
+    
+            <div class="container" id="container">
+                <li><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_3xAYoscMMhNFVk0vgW9UQUKRDZeis28ofg&usqp=CAU" alt="Profile" class="profile"></a></li>
+                <li><a href=""><h4>Cy kend Naunahana</h4></a></li>
+                <button class="option">...</button>
+                <br>
+                <h6>1h ago : Public</h6>
+                <hr>
+                <br>
+                <img src="https://wallpaperaccess.com/full/32822.jpg" alt="Post" class="post">
+                <br>
+                <hr>
+                <button onclick="btnclick()">Like</button>
+                <button onclick="btnclick()">Comment</button>
+                <button onclick="btnclick()">Share</button>
+                <hr>
+            </div>
 
-        <div class="container">
-            <li><a href=""><img src="https://www.thewikifeed.com/wp-content/uploads/2022/05/cong-tv-1.jpg" alt="Profile" class="profile"></a></li>
-            <li><a href=""><h4>Cong TV</h4></a></li>
-            <button class="option">...</button>
-            <br>
-            <h6>2h ago : Public</h6>
-            <hr>
-            <br>
-            <img src="https://i.ytimg.com/vi/fAwmtSmIRwU/maxresdefault.jpg" alt="Post" class="post">
-            <br>
-            <hr>
-            <button onclick="btnclick()">Like</button>
-            <button onclick="btnclick()">Comment</button>
-            <button onclick="btnclick()">Share</button>
-            <hr>
-        </div>
+            <div class="container" id="container">
+                <li><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoUsVQ3LVRSexiWKLkJ8fRviZM2OSgxmXgnA&usqp=CAU" alt="Profile" class="profile"></a></li>
+                <li><a href=""><h4>Thirdy Lagot</h4></a></li>
+                <button class="option">...</button>
+                <br>
+                <h6>9h ago : Public</h6>
+                <hr>
+                <br>
+                <img src="https://images.unsplash.com/photo-1608501078713-8e445a709b39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FsbHBhcGVyJTIwNGt8ZW58MHx8MHx8&w=1000&q=80" alt="Post" class="post">
+                <br>
+                <hr>
+                <button onclick="btnclick()">Like</button>
+                <button onclick="btnclick()">Comment</button>
+                <button onclick="btnclick()">Share</button>
+                <hr>
+            </div>
+        </section>
 
-        <div class="container">
-            <li><a href=""><img src="https://talenthouse-res.cloudinary.com/image/upload/c_limit,fl_progressive,h_1280,w_1280/v1547376740/user-932634/profile/jckzoyqqggbwlfruyfhi.jpg" alt="Profile" class="profile"></a></li>
-            <li><a href=""><h4>Paolul</h4></a></li>
-            <button class="option">...</button>
-            <br>
-            <h6>1h ago : Public</h6>
-            <hr>
-            <br>
-            <img src="https://i.ytimg.com/vi/98T8xswiC9k/maxresdefault.jpg" alt="Post" class="post">
-            <br>
-            <hr>
-            <button onclick="btnclick()">Like</button>
-            <button onclick="btnclick()">Comment</button>
-            <button onclick="btnclick()">Share</button>
-            <hr>
-        </div>
+        <hr>
 
-        <div class="container">
-            <li><a href=""><img src="https://pbs.twimg.com/profile_images/994592419705274369/RLplF55e_400x400.jpg" alt="Profile" class="profile"></a></li>
-            <li><a href=""><h4>Mr Beast</h4></a></li>
-            <button class="option">...</button>
-            <br>
-            <h6>9h ago : Public</h6>
+        <section class="section-right">
+            <div class="friend-request" id="friend-request">
+                <h5>Friend Requests</h5>
+                <div class="friendReq-container">
+                    <img src="./img/IMG_20210905_142014-01_1.jpeg" alt="profile" class="profile">
+                    <h4>Eduardo Fran</h4>
+                    <p>19hr</p>
+                    <button>Confirm</button>
+                    <button>Delete</button>
+                </div>
+                <div class="friendReq-container">
+                    <img src="./img/IMG_20210905_142014-01_1.jpeg" alt="profile" class="profile">
+                    <h4>Eduardo Fran</h4>
+                    <p>19hr</p>
+                    <button>Confirm</button>
+                    <button>Delete</button>
+                </div>
+            </div>
             <hr>
-            <br>
-            <img src="https://i.ytimg.com/vi/0e3GPea1Tyg/maxresdefault.jpg" alt="Post" class="post">
-            <br>
-            <hr>
-            <button onclick="btnclick()">Like</button>
-            <button onclick="btnclick()">Comment</button>
-            <button onclick="btnclick()">Share</button>
-            <hr>
-        </div>
+            <div class="contacts">
+
+            </div>
+        </section>
 
     </main>
 
     <script src="./main.js">
-
+        
     </script>
 </body>
 </html>
