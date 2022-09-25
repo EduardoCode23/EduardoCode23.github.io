@@ -6,7 +6,6 @@
 }
 
 body {
-    background-color: #eee;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -121,10 +120,6 @@ body {
         width: 15%;
     }
 
-    .contacts {
-        height: 60vh;
-    }
-    
     .friend-request {
         position: inherit;
         top: 50px;
