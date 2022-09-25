@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -5,8 +6,11 @@
 }
 
 body {
+    background-color: #eee;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/* NAVBAR */
 
 .navbar {
     position: fixed;
@@ -51,46 +55,14 @@ body {
     text-align: center;
 }
 
-main {
-    position: inherit;
-    background-color: white;
-    display: flex;
-}
+/* MAIN */
 
-/* .section-left */
-
-
-/* main container */
-
-.container {
+.main-container {
     margin: auto;
-    margin-top: 20px;
-    width: 40%;
-    display: block;
-    background-color: #f1f1f1;
-    padding: 12px;
+    height: 90vh;
+    width: 90vh;
+    padding: 20px;
     border-radius: 10px;
-}
-
-.container:nth-child(1) {
-    margin-top: 70px;
-}
-
-
-.container li {
-    list-style: none;
-}
-
-.container a {
-    color: #222;
-}
-
-.container h4 {
-    float: left;
-}
-
-.container h6 {
-    color: #555;
 }
 
 .profile {
@@ -100,47 +72,12 @@ main {
     float: left;
 }
 
-
-button.option {
-    float: right;
-    font-weight: bold;
-}
-
-.post {
-    width: 100%;
-}
-
-.container button {
-    background-color: #f1f1f1;
-    margin: 5px;
-    padding: 5px;
-    border-radius: 5px;
-    text-align: center;
-    margin-left: 15px;
-    display: inline;
-    cursor: pointer;
-    border: 0;
-}
-
-.container button:hover {
-    background-color: #999;
-}
-
-/* section-right */
-
-.section-right {
-    display: flex;
-    position: inherit;
-    top: 50px;
-}
-
-/* friend requests */
-
 .friendReq-container {
     background-color: tomato;
     width: 80%;
     border-radius: 8px;
     margin: 10px;
+    margin-top: 20px;
     padding: 5px;
 }
 
@@ -151,6 +88,7 @@ button.option {
 .friendReq-container p {
     font-size: 10px;
     float: right;
+    font-style: italic;
 }
 
 .friendReq-container button {
@@ -170,38 +108,17 @@ button.option {
     border: 1px #555 solid;
 }
 
-.contacts {
-    height: 60vh;
-}
-
-.friend-request {
-    height: 30vh;
-}
-
-/* sections styles */
-.section-left {
-    width: 70%;
-}
-
-.section-right {
-    width: 30%;
-    display: block;
-    position: fixed;
-    float: right;
-    right: 0;
-}
-
 /* mobile device */
 
-@media only screen and (max-width: 824px) {
+@media only screen and (max-width: 830px) {
     .navbar input {
-        width: 30%;
+        width: 25%;
     }
 }
 
 @media only screen and (max-width: 756px) {
     .navbar input {
-        width: 18%;
+        width: 15%;
     }
 
     .contacts {
@@ -209,7 +126,10 @@ button.option {
     }
     
     .friend-request {
-        height: 40vh;
+        position: inherit;
+        top: 50px;
+        margin-top: 50px;
+        width: 80vh;
     }
 
     .friendReq-container button {
@@ -223,11 +143,12 @@ button.option {
     }
 
     .navbar {
-        background-color: white;
+        background-color: #eee;
         border: none;
     }
 
     .navbar input {
+        height: 40px;
         width: 80%;
         text-align: center;
         display: block;
@@ -245,26 +166,42 @@ button.option {
         border: 1px #222 solid;
     }
 
-    /* main content */
+    .friend-request h5 {
+        font-size: 30px;
+        font-weight: bold;
+        font-style: italic;
+    }
 
-    .section-left {
+    .friendReq-container {
+        background-color: tomato;
+        height: 80px;
         width: 100%;
+        border-radius: 8px;
+        margin: 10px;
+        margin-top: 20px;
+        padding: 10px;
     }
-
-    .container {
-        width: 90%;
+    
+    .friendReq-container p {
+        font-size: 15px;
+        float: right;
     }
-
-    .section-right {
-        display: none;
+    
+    .friendReq-container button {
+        height: 30px;
+        background-color: #333;
+        border: #333 1px solid;
+        color: #eee;
+        border: 0;
+        padding: 7px;
+        border-radius: 5px;
+        cursor: pointer;
     }
-
-    .section-rightResponsive {
-        display: block;
-        float: none;
-        width: 90%;
-        height: 80%;
-        background-color: #eee;
+    
+    .friendReq-container button:hover {
+        background-color: tomato;
+        color: #333;
+        border: 1px #555 solid;
     }
 }
 
@@ -288,6 +225,7 @@ button.option {
     .container {
         width: 90%;
     }
+  
 }
 
 @media only screen and (max-width: 277px) {
@@ -300,6 +238,53 @@ button.option {
     .container button {
         margin-left: 4px;
     }
+
+    .friend-request h5 {
+        font-size: 30px;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    .friendReq-container {
+        background-color: tomato;
+        height: 110px;
+        width: 100%;
+        border-radius: 8px;
+        margin: 10px;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .friendReq-container img {
+        height: 40px;
+    }
+
+    .friendReq-container h4 {
+        font-size: 30px;
+    }
+
+    .friendReq-container p {
+        font-size: 25px;
+        float: right;
+    }
+    
+    .friendReq-container button {
+        height: 45px;
+        font-size: 20px;
+        background-color: #333;
+        border: #333 1px solid;
+        color: #eee;
+        border: 0;
+        padding: 7px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .friendReq-container button:hover {
+        background-color: tomato;
+        color: #333;
+        border: 1px #555 solid;
+    }
 }
 
 @media only screen and (max-width: 243px) {
@@ -310,10 +295,13 @@ button.option {
     }
 }
 
+/* ########## NAVBAR RESPONSIVE ########## */
+
 .navbarResponsive {
+    float: none;
     position: fixed;
     height: 280px;
-    width: 90%;
+    width: 93%;
     background-color: lightblue;
     margin: 15px;
     border-radius: 10px;
@@ -323,6 +311,7 @@ button.option {
 .navbarResponsive li {
     list-style: none;
     display: block;
+    float: none;
 }
 
 .navbarResponsive li:nth-child(1) {
@@ -342,24 +331,3 @@ button.option {
 .navbarResponsive input {
     display: none;
 }
-
-/* friend-request mobile responsive */
-
-.containerResponsive {
-    display: none;
-}
-
-.section-leftResponsive {
-    display: none;
-}
-
-
-
-/* desktop size */
-
-@media only screen and (min-width: 640px) {
-    .navbar li:nth-child(1) {
-        display: none;
-    }
-}
-

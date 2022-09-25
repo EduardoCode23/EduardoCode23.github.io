@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR */
+
+.navbar {
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background-color: lightblue;
+    border-bottom: 2px #222 solid;
+    color: #333;
+}
+
+.navbar ul {
+    overflow: hidden;
+}
+
+.navbar li {
+    list-style: none;
+    float: left;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+    padding: 14px;
+    display: block;
+}
+
+.navbar a:hover:not(:nth-child(1)) {
+    background-color: #333;
+    color: white;
+}
+
+.navbar input {
+    margin: auto;
+    background-color: lightblue;
+    border: #999 1px solid;
+    display: block;
+    margin-top: 13px;
+    width: 280px;
+    border-radius: 10px;
+    height: 30px;
+    text-align: center;
+}
+
+main {
+    position: inherit;
+    background-color: white;
+    display: flex;
+}
+
+/* .section-left */
+
+
+/* main container */
+
+.container {
+    margin: auto;
+    margin-top: 20px;
+    width: 40%;
+    display: block;
+    background-color: #f1f1f1;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.container:nth-child(1) {
+    margin-top: 70px;
+}
+
+
+.container li {
+    list-style: none;
+}
+
+.container a {
+    color: #222;
+}
+
+.container h4 {
+    float: left;
+}
+
+.container h6 {
+    color: #555;
+}
+
+.profile {
+    margin: 5px;
+    border-radius: 15px;
+    height: 30px;
+    float: left;
+}
+
+
+button.option {
+    float: right;
+    font-weight: bold;
+}
+
+.post {
+    width: 100%;
+}
+
+.container button {
+    background-color: #f1f1f1;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 15px;
+    display: inline;
+    cursor: pointer;
+    border: 0;
+}
+
+.container button:hover {
+    background-color: #999;
+}
+
+/* section-right */
+
+.section-right {
+    display: flex;
+    position: inherit;
+    top: 50px;
+}
+
+/* friend requests */
+
+.friendReq-container {
+    background-color: tomato;
+    width: 80%;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.friend-request h5 {
+    padding: 4px;
+}
+
+.friendReq-container p {
+    font-size: 10px;
+    float: right;
+}
+
+.friendReq-container button {
+    height: 20px;
+    background-color: #333;
+    border: #333 1px solid;
+    color: #eee;
+    border: 0;
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.friendReq-container button:hover {
+    background-color: tomato;
+    color: #333;
+    border: 1px #555 solid;
+}
+
+.contacts {
+    height: 60vh;
+}
+
+.friend-request {
+    height: 30vh;
+}
+
+/* sections styles */
+.section-left {
+    width: 70%;
+}
+
+.section-right {
+    width: 30%;
+    display: block;
+    position: fixed;
+    float: right;
+    right: 0;
+}
+
+/* mobile device */
+
+@media only screen and (max-width: 824px) {
+    .navbar input {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 756px) {
+    .navbar input {
+        width: 18%;
+    }
+
+    .contacts {
+        height: 60vh;
+    }
+    
+    .friend-request {
+        height: 40vh;
+    }
+
+    .friendReq-container button {
+        margin-top: 1px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .navbar li:not(:nth-child(1)) {
+        display: none;
+    }
+
+    .navbar {
+        background-color: white;
+        border: none;
+    }
+
+    .navbar input {
+        width: 80%;
+        text-align: center;
+        display: block;
+    }
+
+    .navbar li :nth-child(1) {
+        padding: 5px;
+        margin: 5px;
+        border-radius: 20px;
+        position: relative;
+        top: 6px;
+    }
+
+    .navbar li:hover :nth-child(1) {
+        border: 1px #222 solid;
+    }
+
+    /* main content */
+
+    .section-left {
+        width: 100%;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .section-right {
+        display: none;
+    }
+
+    .section-rightResponsive {
+        display: block;
+        float: none;
+        width: 90%;
+        height: 80%;
+        background-color: #eee;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        width: 90%;
+    }
+
+    .navbar input {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 310px) {
+    .navbar input {
+        width: 80%;
+        text-align: center;
+        display: block;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 277px) {
+    .navbar input {
+        width: 75%;
+        text-align: center;
+        display: block;
+    }
+
+    .container button {
+        margin-left: 4px;
+    }
+}
+
+@media only screen and (max-width: 243px) {
+    .navbar input {
+        width: 70%;
+        text-align: center;
+        display: block;
+    }
+}
+
+.navbarResponsive {
+    position: fixed;
+    height: 280px;
+    width: 90%;
+    background-color: lightblue;
+    margin: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.navbarResponsive li {
+    list-style: none;
+    display: block;
+}
+
+.navbarResponsive li:nth-child(1) {
+    display: flex;
+    width: 100%;
+    float: left;
+}
+
+.navbarResponsive a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+    padding: 14px;
+    display: block;
+}
+
+.navbarResponsive input {
+    display: none;
+}
+
+/* friend-request mobile responsive */
+
+.containerResponsive {
+    display: none;
+}
+
+.section-leftResponsive {
+    display: none;
+}
+
+
+
+/* desktop size */
+
+@media only screen and (min-width: 640px) {
+    .navbar li:nth-child(1) {
+        display: none;
+    }
+}
+

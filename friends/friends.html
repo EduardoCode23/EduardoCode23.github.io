@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends</title>
+    <link rel="stylesheet" href="/friends/friends.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar" id="dropdownClick">
+            <ul>
+                <li><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+                <li><a href="/main/index.html">Newsfeed</a></li>
+                <li><a href="">Marketplace</a></li>
+                <li><a href="/friends/friends.html" onclick="friend()">Friends</a></li>
+                <li><a href="">Notification</a></li>
+                <li><a href="">Profile</a></li>
+                <input type="text" class="search" id="search" placeholder="Search">
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="friend-request" id="friend-request">
+                <h5>Friend Requests</h5>
+                <div class="friendReq-container">
+                    <img src="./img/IMG_20210905_142014-01_1.jpeg" alt="profile" class="profile">
+                    <h4>Eduardo Fran</h4>
+                    <p>19hr</p>
+                    <button>Confirm</button>
+                    <button>Delete</button>
+                </div>
+                <div class="friendReq-container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoUsVQ3LVRSexiWKLkJ8fRviZM2OSgxmXgnA&usqp=CAU" alt="profile" class="profile">
+                    <h4>Ako to Lods</h4>
+                    <p>4d</p>
+                    <button>Confirm</button>
+                    <button>Delete</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./friends.js">
+
+    </script>
+</body>
+</html>
